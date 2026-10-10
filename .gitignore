@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Package Files
+package-lock.json
+yarn.lock
+pipfile.lock
+poetry.lock
+
+# Build Outputs
+/dist
+/build
+/client/build
+/server/__pycache__
+*.log
+
+# Environment Variables
+.env.local
+.env.development
+.env.production
+.env.test
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Miscellaneous
+.npm
+.eslintcache
+.cache
+.parcel-cache
+.coverage
+nyc_output/
+*.seed
+*.log
+
+# Docker
+docker-compose.override.log
