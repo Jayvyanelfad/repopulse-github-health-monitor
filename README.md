@@ -23,7 +23,7 @@ A polished tool for analyzing the health of public GitHub repositories. Provides
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/repopulse-github-health-monitor.git
+   git clone https://github.com/Jayvyanelfad/repopulse-github-health-monitor.git
    cd repopulse-github-health-monitor
    ```
 
@@ -49,12 +49,15 @@ A polished tool for analyzing the health of public GitHub repositories. Provides
    ```bash
    # In one terminal (backend)
    cd server
-   python main.py
+   python server.py
    
    # In another terminal (frontend)
    cd client
    npm start
    ```
+
+   The backend API will be available at http://localhost:8000 and the frontend at http://localhost:3000.
+   **Note**: As of this milestone, only the backend health endpoint (`GET /health`) is implemented. Additional API endpoints for repository data are planned for Milestone 2.
 
 ## Usage
 
@@ -66,13 +69,13 @@ A polished tool for analyzing the health of public GitHub repositories. Provides
 
 ## API Endpoints
 
-- `GET /health` - Health check endpoint
-- `GET /api/repo/:owner/:repo` - Get repository metadata
-- `GET /api/repo/:owner/:repo/issues` - Get issues (paginated)
-- `GET /api/repo/:owner/:repo/pulls` - Get pull requests (paginated)
-- `GET /api/repo/:owner/:repo/releases` - Get releases (paginated)
-- `GET /api/repo/:owner/:repo/contributors` - Get contributors
-- `GET /api/repo/:owner/:repo/workflow-runs` - Get GitHub Actions workflow runs
+- `GET /health` - Health check endpoint (currently implemented)
+- `GET /api/repo/:owner/:repo` - Get repository metadata (planned)
+- `GET /api/repo/:owner/:repo/issues` - Get issues (paginated) (planned)
+- `GET /api/repo/:owner/:repo/pulls` - Get pull requests (paginated) (planned)
+- `GET /api/repo/:owner/:repo/releases` - Get releases (paginated) (planned)
+- `GET /api/repo/:owner/:repo/contributors` - Get contributors (planned)
+- `GET /api/repo/:owner/:repo/workflow-runs` - Get GitHub Actions workflow runs (planned)
 
 ## Development Roadmap
 
